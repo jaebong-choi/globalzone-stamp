@@ -69,7 +69,13 @@ ol.steps{list-style:none;counter-reset:s;display:grid;gap:16px}
 .steps img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;margin-top:12px;background:#fff}
 .steps .note{font-size:13px;margin-top:8px}
 
+h2.method{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+h2.method .num{font-size:14px;font-weight:700;color:#fff;background:var(--blue);border-radius:999px;padding:3px 12px}
+#visit .num{background:var(--muted)}
+h2.method em{font-style:normal;font-size:14px;font-weight:700;color:var(--pink);border:2px solid var(--pink);border-radius:999px;padding:1px 10px}
+.lead{font-size:15px;color:var(--muted);margin:-6px 0 14px}
 .box{background:var(--card);border-radius:16px;padding:18px}
+.box .big{margin-top:10px}
 .box p{font-size:16px}
 .box .big{font-size:22px;font-weight:700;color:var(--blue)}
 .tel{display:inline-block;margin-top:10px;font-weight:700;font-size:20px;text-decoration:none}
@@ -89,7 +95,7 @@ footer{padding:36px 0 40px;font-size:13px;color:var(--muted)}
 
     <div class="deadline">
       <div class="stamp" aria-hidden="true"><div><small>신청 마감</small><b>12.15</b><small>화요일</small></div></div>
-      <p><b>12월 15일(화) 16:00까지</b><br>역량포털에서 온라인으로 신청하거나 국제처에 신청서를 내세요.</p>
+      <p><b>12월 15일(화) 16:00까지</b><br>역량포털에서 온라인으로 신청하세요. 휴대폰으로도 할 수 있습니다.</p>
     </div>
 
     <a class="cta" href="https://success.kmcu.ac.kr/" target="_blank" rel="noopener">역량포털에서 신청하기</a>
@@ -121,7 +127,8 @@ footer{padding:36px 0 40px;font-size:13px;color:var(--muted)}
   </section>
 
   <section id="how" aria-labelledby="how-title">
-    <h2 id="how-title">온라인 신청 방법</h2>
+    <h2 id="how-title" class="method"><span class="num">방법 1</span>온라인 신청 <em>추천</em></h2>
+    <p class="lead">역량포털시스템에서 신청서 스캔본을 올리면 끝납니다. 아래 순서대로 따라 하세요.</p>
     <ol class="steps">
       <li>
         <h3>역량포털시스템에 로그인하고 ‘비교과 프로그램’ 누르기</h3>
@@ -160,10 +167,11 @@ footer{padding:36px 0 40px;font-size:13px;color:var(--muted)}
   </section>
 
   <section aria-labelledby="visit">
-    <h2 id="visit">국제처 방문 접수</h2>
+    <h2 id="visit" class="method"><span class="num">방법 2</span>국제처 방문</h2>
     <div class="box">
+      <p>온라인 신청이 어렵다면 국제처로 오세요. 신청서를 직접 내면 됩니다.</p>
       <p class="big">복지관 2층 국제처</p>
-      <p>12월 15일(화)까지 신청서를 직접 내도 됩니다.</p>
+      <p>12월 15일(화)까지</p>
     </div>
   </section>
 
